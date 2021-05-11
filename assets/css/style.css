@@ -14,15 +14,10 @@
 }
  #cat {
      width: 85px;
-     position: absolute;
-     opacity: 1;
-     left: 1390px;
-     top: 450px;
- }
-
- #paw {
-     width: 30px;
-     transform: rotate(270deg);
+     position: relative;
+     opacity: 0;
+     left: 775px;
+     top: 470px;
  }
 
  @keyframes car-mov {
@@ -31,7 +26,7 @@
         left: 180px;
         top: 150px;
         transform: rotate(0deg);
-        opacity: 0;
+        opacity: 1;
     }
 
     0.5% {
@@ -42,42 +37,42 @@
     }
 
     8% {
-        left: 570px;
+        left: 615px;
         top: 150px;
         transform: rotate(0deg);
         opacity: 1;
     }
 
     8.5% {
-        left: 570px;
+        left: 635px;
         top: 150px;
         transform: rotate(15deg);
         opacity: 1;
     }
 
     9% {
-        left: 585px;
+        left: 635px;
         top: 150px;
         transform: rotate(30deg);
         opacity: 1;
     }
 
     9.5% {
-        left: 600px;
+        left: 655px;
         top: 150px;
         transform: rotate(45deg);
         opacity: 1;
     }
 
     10% {
-        left: 615px;
+        left: 655px;
         top: 150px;
         transform: rotate(60deg);
         opacity: 1;
     }
 
     10.5% {
-        left: 635px;
+        left: 655px;
         top: 150px;
         transform: rotate(75deg);
         opacity: 1;
@@ -218,14 +213,14 @@
 
     75% {
         left: 120px;
-        top: 550px;
+        top: 570px;
         transform: rotate(270deg);
         opacity: 1;  
     }
 
-    85% {
+    87% {
         left: 120px;
-        top: 550px;
+        top: 570px;
         transform: rotate(270deg);
         opacity: 1;  
     }
@@ -262,57 +257,199 @@
         left: 150px;
         top: 150px;
         transform: rotate(330deg);
-        opacity: 0.5;
+        opacity: 1;
     }
 
     98% {
         left: 160px;
         top: 150px;
         transform: rotate(345deg);
-        opacity: 0.5;
+        opacity: 1;
     }
 
-    98.5 {
+    98.5% {
         left: 170px;
         top: 150px;
         transform: rotate(345deg);
-        opacity: 0.5; 
+        opacity: 1; 
     }
 
-    99.5 {
+    99.5% {
         left: 180px;
         top: 150px;
         transform: rotate(345deg);
-        opacity: 0; 
+        opacity: 1; 
     }
+
+    99.99% {
+        left: 180px;
+        top: 150px;
+        transform: rotate(360deg);
+        opacity: 1;
+    } 
 
     100% {
         left: 180px;
         top: 150px;
-        transform: rotate(360deg);
-        opacity: 0;
-    }
-
-
-
-
-    
-
-
-
-
-
-
-
-
-     
+        transform: rotate(0deg);
+        opacity: 1;
+    } 
  }
 
  #car {
      animation-name: car-mov;
-     animation-duration: 10s;
-     animation-delay: 0s;
+     animation-duration: 15s;
+     animation-delay: 2s;
      animation-iteration-count: infinite;
      animation-timing-function: ease-out;
-
  }
+
+ @keyframes cat-mov {
+     0% {
+        opacity: 0;
+        left: 775px;
+        top: 470px;
+        transform: rotate(0deg);
+     }
+
+     5% {
+        opacity: 0.5;
+        left: 750px;
+        top: 475px;
+        transform: rotate(10deg);
+     }
+
+     10% {
+        opacity: 1;
+        left: 625px;
+        top: 470px;
+        transform: rotate(0deg);
+     }
+
+     15% {
+        opacity: 1;
+        left: 575px;
+        top: 475px;
+        transform: rotate(-10deg);
+     }
+
+     20% {
+        opacity: 1;
+        left: 525px;
+        top: 470px;
+        transform: rotate(0deg);
+     }
+
+     25% {
+        opacity: 1;
+        left: 475px;
+        top: 475px;
+        transform: rotate(10deg);  
+    }
+    
+    30% {
+        opacity: 1;
+        left: 425px;
+        top: 470px;
+        transform: rotate(0deg);   
+    }
+
+    35% {
+        opacity: 1;
+        left: 375px;
+        top: 475px;
+        transform: rotate(-10deg); 
+    }
+
+    40% {
+        opacity: 1;
+        left: 325px;
+        top: 470px;
+        transform: rotate(0deg); 
+    }
+
+    45% {
+        opacity: 1;
+        left: 275px;
+        top: 475px;
+        transform: rotate(10deg); 
+    }
+
+    50% {
+        opacity: 1;
+        left: 225px;
+        top: 470px;
+        transform: rotate(0deg); 
+    }
+
+    55% {
+        opacity: 1;
+        left: 175px;
+        top: 475px;
+        transform: rotate(-10deg); 
+    }
+
+    60% {
+        opacity: 1;
+        left: 125px;
+        top: 470px;
+        transform: rotate(0deg);  
+    }
+
+    65% {
+        opacity: 1;
+        left: 75px;
+        top: 475px;
+        transform: rotate(10deg);  
+    }
+
+    70% {
+        opacity: 1;
+        left: 25px;
+        top: 470px;
+        transform: rotate(0deg);  
+    }
+
+    75% {
+        opacity: 1;
+        left: -25px;
+        top: 475px;
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        opacity: 1;
+        left: -75px;
+        top: 470px;
+        transform: rotate(0deg);  
+    }
+
+    85% {
+        opacity: 0.5;
+        left: -125px;
+        top: 475px;
+        transform: rotate(10deg); 
+    }
+
+    90% {
+        opacity: 0;
+        left: -175px;
+        top: 470px;
+        transform: rotate(0deg);
+    }
+
+    95% {
+        opacity: 0;
+        left: -225px;
+        top: 475px;
+        transform: rotate(-10deg);  
+    }
+ }
+
+ #cat {
+    animation-name: cat-mov;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
